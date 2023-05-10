@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
     <title>Odin's Recipe Box</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Odin's Recipe Box</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Main</a></li>
-            <li><a href="about.html">About</a></li>
-            <li>Lets Cook</li>
-        </ul>
-    </nav>
+    
+    <div id="navbar">
+        <header>
+            <img src="images/cauldron-logo.png" alt="Logo of a cauldron" class="logo">
+            <h1><a href="index.html">Odin Recipes</a></h1>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </header>
+        <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content">
+                <li class="menu1"><a href="about.html">About</a></li>
+                <li class="menu1"><a href="contact.html">Contact</a></li>
+                <li class="menu1 dropdown"><a href="#">Lets Cook</a>
+                    <ul>
+                        <li class="menu2"><a href="recipes/skause.html">Skause: Meat Stew</a></li>
+                        <li class="menu2"><a href="recipes/flatbread.html">Birch Bark Flatbread</a></li>
+                        <li class="menu2"><a href="recipes/elderberry.html">Elderberry Soup</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
-        <h2>Greetings, mortals!</h2>
-        <p>I am Odin, the Allfather of Norse mythology and the god of wisdom, magic, and war. My reign may be over in the realms of the gods, but my legacy lives on through my wisdom, power, and knowledge of all things culinary. I have long been known for my love of hearty and nourishing food, and it is my pleasure to share with you some of the most delicious and inspired recipes from my own personal recipe box. From savory stews to sweet treats, my recipes are sure to satisfy even the most discerning palates. So gather your ingredients, don your apron, and let us embark on a culinary journey fit for the gods themselves.</p>
-        <p class="action">Lets cook!</p>
+        <div id="intro">
+            <h2>Greetings, mortals!</h2>
+            
+            <p>I am Odin, the Allfather of Norse mythology and the god of wisdom, magic, and war. My reign may be over in the realms of the gods, but my legacy lives on through my wisdom, power, and knowledge of all things culinary. I have long been known for my love of hearty and nourishing food, and it is my pleasure to share with you some of the most delicious and inspired recipes from my own personal recipe box. From savory stews to sweet treats, my recipes are sure to satisfy even the most discerning palates. So gather your ingredients, don your apron, and let us embark on a culinary journey fit for the gods themselves.</p>
+        </div>
+            
+        <a href="recipes/skause.html" id="grid-skause"><img src="images/skause-banner.jpg" alt="Skause"></a>
+        <a href="recipes/flatbread.html" id="grid-flatbread"><img src="images/flatbread-banner.jpg" alt="Birch bark Flatbread"></a>
+        <a href="recipes/elderberry.html" grid="elderberry"><img src="images/elderberrysoup-banner.jpg" alt="Elderberry Soup"></a>
         
-        <p><a href="recipes/skause.html">Skause: Meat Stew</a></p>
-        <p><a href="recipes/flatbread.html">Birch Bark Flatbread</a></p>
-        <p><a href="recipes/elderberry.html">Elderberry Soup</a></p>
+        <p class="action">Lets cook!</p>
+
     </main>
 
     <footer>
-        <p>Credit: Destination Design</p>
+        <p>Destination Design &copy;2023</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

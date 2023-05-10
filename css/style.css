@@ -1,0 +1,258 @@
+/* CSS Reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Properties */
+:root {
+    --col-white: rgb(240, 225, 201);
+    --col-grey: rgb(73, 64, 51);
+    --col-burgundy: #400101;
+    --col-orange: #8C1C03;
+    --col-black: rgb(20, 20, 20);
+  }
+
+/* Global Styles */
+@font-face {
+    font-family: 'Norse';
+    src: url('/fonts/Norse.woff2') format('woff2');
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost';
+    font-size: 1.1rem;
+    font-weight: 300;
+    background: linear-gradient( 160deg, rgba(20,20,20, 0.8), rgba(73, 64, 51, 0.7)),url(/images/fire-4892711_960_720.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: var(--col-black);
+    color: var(--col-white);
+}
+
+body a {
+    color: var(--col-white);
+    text-decoration: none;
+}
+
+/* Header/Navigation Bar */
+
+#navbar {
+    background-color: var(--col-burgundy);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    /* position: absolute; */
+}
+
+.logo {
+    height: 50px;
+    display: inline-block;
+    background-color: var(--col-white);
+    padding: .2rem;
+    border-radius: 5px;;
+}
+
+h1 {
+    font-family: 'Norse';
+    font-size: 3em;
+    display: inline-block;
+    padding: .5rem;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+/* Overlay Menu Styles from W3Schools */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(64,1,1);
+  background-color: rgba(64,1,1, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--col-white);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: var(--col-grey);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+/* Main Styles */
+main {
+    width: 90%;
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: var(--col-black);
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 5;
+    gap: 20px;
+    border-radius: 2px;
+
+}
+
+main img {
+    width: 100%;
+}
+
+
+/* Footer Styles */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(20,20,20, 0.2);
+    color: var(--col-white);
+    text-align: center;
+    font-weight: 400;
+    padding: .5rem 0;
+    opacity: .9;
+}
+
+  
+
+/* Mobile Viewport */
+
+/* Mobile: Main Styles */
+
+#grid-skause {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#grid-flatbread {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#grid-elderberry {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+}
+
+/* Desktop Viewport */
+@media (min-width: 450px) {
+    
+    /* Desktop: Main Styles */
+    main {
+        grid-template-columns: 2;
+        grid-template-rows: 4;
+    }
+
+    #intro {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 4;
+    }
+
+    #grid-skause {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+    
+    #grid-flatbread {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    #grid-elderberry {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    #action {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+    }
+}
