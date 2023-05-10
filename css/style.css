@@ -52,8 +52,8 @@ table {
 :root {
     --col-white: rgb(240, 225, 201);
     --col-grey: rgb(73, 64, 51);
-    --col-burgundy: #400101;
-    --col-orange: #8C1C03;
+    --col-dorange: #6e1602;
+    --col-lorange: #af2304;
     --col-black: rgb(20, 20, 20);
   }
 
@@ -61,6 +61,11 @@ table {
 @font-face {
     font-family: 'Norse';
     src: url('/fonts/Norse.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('/fonts/Norsebold.woff2') format('woff2');
   }
 
 body {
@@ -87,7 +92,7 @@ body a {
 /* Header/Navigation Bar */
 
 #navbar {
-    background-color: var(--col-burgundy);
+    background-color: var(--col-dorange);
 }
 
 header {
@@ -125,8 +130,8 @@ h1 a {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(64,1,1);
-  background-color: rgba(64,1,1, 0.9);
+  background-color: rgb(110,22,2);
+  background-color: rgba(110,22,2   , 0.9);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -188,6 +193,14 @@ main img {
     width: 100%;
 }
 
+h2 {
+    color: var(--col-lorange);
+    font-family: 'Norse Bold';
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    text-shadow: 0 0 20px rgba(250,250,250,.4);
+}
+
 
 /* Footer Styles */
 footer {
@@ -212,9 +225,19 @@ footer {
     grid-row: 1 / span 1;
 }
 
+#intro {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
 #grid-flatbread {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
+}
+
+#action {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
 }
 
 #grid-elderberry {
@@ -228,12 +251,17 @@ footer {
     /* Desktop: Main Styles */
     main {
         grid-template-columns: 2;
-        grid-template-rows: 4;
+        grid-template-rows: 3;
     }
 
     #intro {
         grid-column: 1 / span 1;
-        grid-row: 1 / span 4;
+        grid-row: 1 / span 2;
+    }
+
+    #action {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
     }
 
     #grid-skause {
@@ -249,10 +277,5 @@ footer {
     #grid-elderberry {
         grid-column: 2 / span 1;
         grid-row: 3 / span 1;
-    }
-
-    #action {
-        grid-column: 2 / span 1;
-        grid-row: 4 / span 1;
     }
 }
