@@ -106,9 +106,6 @@ header {
 .logo {
     height: 50px;
     display: inline-block;
-    background-color: var(--col-white);
-    padding: .2rem;
-    border-radius: 5px;;
 }
 
 h1 {
@@ -181,11 +178,11 @@ main {
     padding: 1rem;
     background-color: var(--col-black);
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 5;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
     gap: 20px;
+    align-items: center;
     border-radius: 2px;
-
 }
 
 main img {
@@ -258,7 +255,7 @@ footer {
 
   
 
-/* Mobile Viewport */
+/* Mobile and Portrait Tablet Viewport */
 
 /* Mobile: Main Styles */
 
@@ -280,6 +277,7 @@ footer {
 #action {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
+    align-self: end;
 }
 
 #grid-elderberry {
@@ -288,12 +286,13 @@ footer {
 }
 
 /* Desktop Viewport */
-@media (min-width: 450px) {
+@media (min-width: 780px) {
     
     /* Desktop: Main Styles */
     main {
-        grid-template-columns: 2;
-        grid-template-rows: 3;
+        grid-template-columns: auto auto;
+        grid-template-rows: 30% 30% 30%;
+        padding: 1.5rem;
     }
 
     #intro {
@@ -304,6 +303,7 @@ footer {
     #action {
         grid-column: 1 / span 1;
         grid-row: 3 / span 1;
+        padding-bottom: 20px;
     }
 
     #grid-skause {
@@ -320,4 +320,5 @@ footer {
         grid-column: 2 / span 1;
         grid-row: 3 / span 1;
     }
+
 }
