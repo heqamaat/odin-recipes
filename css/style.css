@@ -60,12 +60,12 @@ table {
 /* Global Styles */
 @font-face {
     font-family: 'Norse';
-    src: url('/fonts/Norse.woff2') format('woff2');
+    src: url('https://heqamaat.github.io/odin-recipes/fonts/Norse.woff2') format('woff2');
   }
 
 @font-face {
     font-family: 'Norse Bold';
-    src: url('/fonts/Norsebold.woff2') format('woff2');
+    src: url('https://heqamaat.github.io/odin-recipes/fonts/Norsebold.woff2') format('woff2');
   }
 
 body {
@@ -75,7 +75,7 @@ body {
     font-family: 'Jost';
     font-size: 1.1rem;
     font-weight: 300;
-    background: linear-gradient( 160deg, rgba(20,20,20, 0.8), rgba(73, 64, 51, 0.7)),url(/images/fire-4892711_960_720.jpg) no-repeat center center fixed;
+    background: linear-gradient( 160deg, rgba(20,20,20, 0.8), rgba(73, 64, 51, 0.7)),url('https://heqamaat.github.io/odin-recipes/images/fire-bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
