@@ -10,7 +10,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -32,9 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -132,6 +130,13 @@ h1 a {
   transition: 0.5s;
 }
 
+.overlay ul, .overlay li {
+  list-style-type: none;
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 .overlay-content {
   position: relative;
   top: 25%;
@@ -187,12 +192,19 @@ main img {
 h2 {
     color: var(--col-lorange);
     font-family: 'Norse Bold';
-    font-size: 1.8rem;
-    padding: 20px 0;
-}
+    font-size: 2rem;
+  }
 
 #intro p {
     line-height: 125%;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  line-height: 150%;
 }
 
 
@@ -287,6 +299,10 @@ footer {
     grid-row: 5 / span 1;
 }
 
+#homepage h2 {
+  padding: 20px 0;
+}
+
 /* Mobile: Main Recipe Styles */
 #recipe {
   display: grid;
@@ -295,10 +311,27 @@ footer {
   align-items: center;
 }
 
+#recipe h2 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#recipe h3 {
+  font-family: 'Norse';
+  font-size: 1.5rem;
+}
+
+#recipe img {
+  padding: 3%;
+  max-width: 94%;
+  background-color: var(--col-white);
+  box-shadow: 3px 2px 8px rgb(0,0,0), 0 0 15px rgba(200,200,200,.5);
+}
+
 /* Desktop Viewport */
 @media (min-width: 780px) {
     
-    /* Desktop: Main Styles */
+    /* Desktop: Main Homepage Styles */
     #homepage {
         grid-template-columns: auto auto;
         grid-template-rows: 30% 30% 30%;
@@ -330,5 +363,25 @@ footer {
         grid-column: 2 / span 1;
         grid-row: 3 / span 1;
     }
+
+    /* Desktop: Main Recipe Styles */
+    #recipe {
+      grid-template-columns: 40% auto;
+      padding: 1.5rem;
+    }
+
+    #recipe h2 {
+      grid-column: 1 / span 2;
+    }
+
+    #credit {
+      grid-column: 1 / span 2;
+      justify-self: center;
+    }
+
+    #recipe img {
+      transform: rotate(-1deg);
+    }
+
 
 }
