@@ -177,11 +177,6 @@ main {
     margin: 3rem auto;
     padding: 1rem;
     background-color: var(--col-black);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 20px;
-    align-items: center;
     border-radius: 2px;
 }
 
@@ -257,7 +252,14 @@ footer {
 
 /* Mobile and Portrait Tablet Viewport */
 
-/* Mobile: Main Styles */
+/* Mobile: Main Homepage Styles */
+#homepage {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 20px;
+  align-items: center;
+}
 
 #grid-skause {
     grid-column: 1 / span 1;
@@ -285,11 +287,19 @@ footer {
     grid-row: 5 / span 1;
 }
 
+/* Mobile: Main Recipe Styles */
+#recipe {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px;
+  align-items: center;
+}
+
 /* Desktop Viewport */
 @media (min-width: 780px) {
     
     /* Desktop: Main Styles */
-    main {
+    #homepage {
         grid-template-columns: auto auto;
         grid-template-rows: 30% 30% 30%;
         padding: 1.5rem;
