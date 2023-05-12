@@ -229,6 +229,7 @@ li {
     font-weight: 600;
     margin: auto;
     display: block;
+    cursor: pointer;
   }
   
   .button-89:hover,

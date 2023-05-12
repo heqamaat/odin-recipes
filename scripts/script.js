@@ -8,7 +8,7 @@ function openNav() {
   }
 
 //Homepage action button script
-const linkList = ['/recipes/skause.html','/recipes/flatbread.html','/recipes/elderberry.html'];
+const linkList = ['/odin-recipes/recipes/skause.html','/odin-recipes/recipes/flatbread.html','/odin-recipes/recipes/elderberry.html'];
 
 document.getElementById("action").onclick = function() {
   let randomNumber = Math.floor(Math.random()*3);
