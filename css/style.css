@@ -97,7 +97,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem;
+    padding: .5rem 1rem;
     /* position: absolute; */
 }
 
@@ -326,10 +326,6 @@ footer {
   box-shadow: 3px 2px 8px rgb(0,0,0), 0 0 15px rgba(200,200,200,.5);
 }
 
-#recipe section {
-  padding: 20px;
-}
-
 #ingredients {
   align-self: start;
 }
@@ -395,6 +391,10 @@ footer {
 
     #recipe img {
       transform: rotate(-1.5deg);
+    }
+
+    #recipe section {
+      padding: 20px;
     }
 
 
