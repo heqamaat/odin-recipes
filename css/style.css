@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.25;
 }
 
 blockquote, q {
@@ -195,10 +195,6 @@ h2 {
     font-size: 2rem;
   }
 
-#intro p {
-    line-height: 125%;
-}
-
 ul {
   list-style-type: square;
 }
@@ -328,6 +324,15 @@ footer {
   box-shadow: 3px 2px 8px rgb(0,0,0), 0 0 15px rgba(200,200,200,.5);
 }
 
+#credit {
+  justify-self: center;
+}
+
+#credit a {
+  color: var(--col-lorange);
+  font-weight: 600;
+}
+
 /* Desktop Viewport */
 @media (min-width: 780px) {
     
@@ -376,11 +381,10 @@ footer {
 
     #credit {
       grid-column: 1 / span 2;
-      justify-self: center;
     }
 
     #recipe img {
-      transform: rotate(-1deg);
+      transform: rotate(-1.5deg);
     }
 
 
