@@ -91,6 +91,9 @@ body a {
 
 #navbar {
     background-color: var(--col-dorange);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header {
@@ -98,7 +101,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: .5rem 1rem;
-    /* position: absolute; */
 }
 
 .logo {
