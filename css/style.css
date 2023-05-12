@@ -315,6 +315,8 @@ footer {
 #recipe h3 {
   font-family: 'Norse';
   font-size: 1.5rem;
+  border-left: 4px solid var(--col-lorange);
+  padding-left: 10px;
 }
 
 #recipe img {
@@ -322,6 +324,14 @@ footer {
   max-width: 94%;
   background-color: var(--col-white);
   box-shadow: 3px 2px 8px rgb(0,0,0), 0 0 15px rgba(200,200,200,.5);
+}
+
+#recipe section {
+  padding: 20px;
+}
+
+#ingredients {
+  align-self: start;
 }
 
 #credit {
