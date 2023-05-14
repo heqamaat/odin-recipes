@@ -302,19 +302,20 @@ footer {
   padding: 20px 0;
 }
 
-/* Mobile: Main Recipe Styles */
-#recipe {
+/* Mobile: Main Recipe and Contact Styles */
+#recipe, #contact {
   display: grid;
   grid-template-columns: 100%;
   gap: 20px;
   align-items: center;
 }
 
-#recipe h2 {
+#recipe h2, #contact h2 {
   padding-top: 15px;
   padding-bottom: 10px;
 }
 
+/* Mobile: Recipe Only Styles */
 #recipe h3 {
   font-family: 'Norse';
   font-size: 1.5rem;
