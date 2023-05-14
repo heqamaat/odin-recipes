@@ -87,6 +87,10 @@ body a {
     text-decoration: none;
 }
 
+p {
+  text-indent: 2rem;
+}
+
 /* Header/Navigation Bar */
 
 #navbar {
@@ -315,6 +319,20 @@ footer {
   padding-bottom: 10px;
 }
 
+#recipe p, #contact p {
+  margin-bottom: 30px;
+}
+
+#recipe p:last-child, #contact p:last-child {
+  margin-bottom: 0;
+}
+
+#credit a, #contact a {
+  color: var(--col-lorange);
+  font-weight: 600;
+}
+
+
 /* Mobile: Recipe Only Styles */
 #recipe h3 {
   font-family: 'Norse';
@@ -336,11 +354,49 @@ footer {
 
 #credit {
   justify-self: center;
+  margin-bottom: 30px;
 }
 
-#credit a {
-  color: var(--col-lorange);
+#credit p {
+  text-indent: 0;
+  margin-bottom: 0;
+}
+
+/* Mobile: Contact Only Styles */
+#contact-top, #suggestions, #about-me {
+  margin-bottom: 30px;
+}
+
+#contact h3 {
+  display: block;
+  margin: 10px auto;
   font-weight: 600;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+h3 span {
+  border-left: 4px solid var(--col-lorange);
+  padding: 0 10px;
+}
+
+#contact img {
+  display: block;
+  height: 65px;
+  width: 65px;
+  margin: auto;
+
+}
+
+input, select, label, textarea {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin: 10px 0;
+  font-weight: 400;
 }
 
 /* Desktop Viewport */
@@ -391,6 +447,7 @@ footer {
 
     #credit {
       grid-column: 1 / span 2;
+      margin: 0;
     }
 
     #recipe img {
@@ -400,6 +457,31 @@ footer {
     #recipe section {
       padding: 20px;
     }
+
+  /* Desktop: Main Contact Style */
+  #contact {
+    grid-template-columns: 30% 35% 30%;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: start;
+    text-align: justify;
+  }
+
+  #contact img {
+    padding-bottom: 10px;
+  }
+
+  #contact-top {
+    grid-column: 1 / span 3;
+  }
+
+  #contact-top p {
+    text-indent: 0;
+  }
+
+  #resources, #suggestions, #about-me {
+    padding: 2%
+  }
 
 
 }
