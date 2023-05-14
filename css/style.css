@@ -116,6 +116,7 @@ h1 {
     font-family: 'Norse';
     font-size: 3em;
     display: inline-block;
+    text-shadow: 1px 1px black;
 }
 
 h1 a {
