@@ -185,7 +185,7 @@ h1 a {
 
 /* Main Styles */
 main {
-    width: 90%;
+    width: 88%;
     margin: 3rem auto;
     padding: 1rem;
     background-color: var(--col-black);
@@ -349,7 +349,7 @@ footer {
   box-shadow: 3px 2px 8px rgb(0,0,0), 0 0 15px rgba(200,200,200,.5);
 }
 
-#ingredients {
+#ingredients, #directions {
   align-self: start;
 }
 
@@ -438,7 +438,7 @@ label {
 
     /* Desktop: Main Recipe Styles */
     #recipe {
-      grid-template-columns: 40% auto;
+      grid-template-columns: 35% auto;
       padding: 1.5rem;
     }
 

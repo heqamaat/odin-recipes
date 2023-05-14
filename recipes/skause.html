@@ -8,6 +8,7 @@
     <title>Odin's Recipe Box</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/lightbox.min.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,7 @@
     <main id="recipe">
         <h2>Skause: Meat Stew</h2>
 
-        <img src="../images/skause-image.jpg" alt="Skause Stew cooking in a pot">
+        <a href="../images/skause-image.jpg" data-lightbox="image-1" data-title="Skause Stew cooking in a pot"><img src="../images/skause-image.jpg" alt="Skause Stew cooking in a pot"></a>
 
         <section>
             <p>Skause is a dish that dates back to the time of the gods.  A dish of great import from the sculleries in Asgard. Warriors and heroes have been sustained through the ages by this hearty and nourishing bowl prepared by the loving hand of many a dear consort.</p>
@@ -87,5 +88,6 @@
     </footer>
 
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

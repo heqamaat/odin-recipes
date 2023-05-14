@@ -8,6 +8,7 @@
     <title>Odin's Recipe Box</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/lightbox.min.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,7 @@
     <main id="recipe">
         <h2>Elderberry Soup</h2>
 
-        <img src="../images/elderberrysoup-image.jpg" alt="A bowl of elderberry soup with pears">
+        <a href="../images/elderberrysoup-image.jpg" data-lightbox="image-1" data-title="A bowl of elderberry soup with pears"><img src="../images/elderberrysoup-image.jpg" alt="A bowl of elderberry soup with pears"></a>
 
         <section>
             <p>I have fond memories of elderberry soup, a sweet and delectably treat to be savored as a chilled dessert on the hottest days of summer, as well as a warming comfort through the famed long nights of winter. I dare day it could even fend off the biting chill of Niflheim.</p>
@@ -76,5 +77,6 @@
     </footer>
 
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

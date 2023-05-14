@@ -8,6 +8,7 @@
     <title>Odin's Recipe Box</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/lightbox.min.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,9 +37,9 @@
     </div>
 
     <main id="recipe"> 
-        <h2>Birch bark Flatbread</h2>
+        <h2>Birch Bark Flatbread</h2>
         
-        <img src="../images/flatbread-image.jpg" alt="Cooked flatbread hanging on a string.">
+        <a href="../images/flatbread-image.jpg" data-lightbox="image-1" data-title="Baked flatbread hanging on a string in the traditional style"><img src="../images/flatbread-image.jpg" alt="Baked flatbread hanging on a string."></a>
 
         <section>
             <p>The history of this flatbread can be traced back to the Viking Age.  It was a time of conquest. It was a time of adventure.  It was a time when our warriors needed simple sustenance such that it could keep us on our feet and allow us to withstand the rigors of long expeditions.  A bread rolled thin and baked flat at a temperature to rival the forge of Mjöllnir is a dry and hard bread ideal for storage and transportation.</p>
@@ -79,5 +80,6 @@
     </footer>
 
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
